@@ -111,4 +111,14 @@ public class StudentDAO {
         return null;
     }
 
+    public void deleteAllStudents() {
+        try (Connection connection = DbConnection.getConnection();
+             Statement stmt = connection.createStatement()) {
+            // Suppression de toutes les lignes de la table Students
+            stmt.execute("DELETE FROM borrows");
+            stmt.execute("DELETE FROM students");
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+    }
 }

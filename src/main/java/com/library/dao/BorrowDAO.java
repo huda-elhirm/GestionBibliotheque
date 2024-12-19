@@ -8,8 +8,11 @@ import com.library.util.DbConnection;
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.logging.Logger;
 
 public class BorrowDAO {
+
+    private static final Logger logger = Logger.getLogger(BorrowDAO.class.getName());
 
     private final StudentDAO studentDAO;
     private final BookDAO bookDAO;
@@ -196,6 +199,16 @@ public class BorrowDAO {
             e.printStackTrace();
         }
         return borrows;
+    }
+
+    public void deleteAllBorrows() {
+        String query = "DELETE FROM Borrows";
+        try (Connection connection = DbConnection.getConnection();
+             Statement stmt = connection.createStatement()) {
+            stmt.executeUpdate(query);
+        } catch (SQLException e) {
+            logger.severe("Erreur lors de la suppression des emprunts : " + e.getMessage());
+        }
     }
 
 

@@ -153,6 +153,14 @@ public class BookDAO {
         }
         return Optional.empty();
     }
+    public void deleteAllBooks() {
+        try (Connection connection = DbConnection.getConnection();
+             Statement stmt = connection.createStatement()) {
+            stmt.execute("DELETE FROM Books");  // Supprimer tous les livres
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+    }
 
     // Find book by title
     public Book findBookByTitle(String title) {
