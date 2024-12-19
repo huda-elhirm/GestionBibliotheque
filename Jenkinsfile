@@ -1,18 +1,13 @@
 pipeline {
     agent any
     
-    tools {
-        maven 'Maven' // Ensure Maven is configured in Jenkins (Manage Jenkins -> Global Tool Configuration)
-    }
-    
     environment {
         MAVEN_HOME = tool 'Maven'
     }
     stages {
         stage('Checkout') {
             steps {
-                checkout scm
-                //git 'https://github.com/huda-elhirm/GestionBibliotheque.git'
+                git 'https://github.com/huda-elhirm/GestionBibliotheque.git'
             }
         }
         stage('Build') {
