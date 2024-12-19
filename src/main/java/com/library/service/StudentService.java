@@ -32,7 +32,7 @@ public class StudentService {
 
     // Trouver un étudiant par ID
     public Student findStudentById(int id) {
-        return studentDAO.getStudentById(id);
+        return studentDAO.getStudentById(id).get();
     }
 
     //modifier  un étudiant

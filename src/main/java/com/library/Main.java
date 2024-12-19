@@ -1,6 +1,7 @@
 package com.library;
 
 import com.library.dao.BookDAO;
+import com.library.dao.StudentDAO;
 import com.library.service.BorrowService;
 import com.library.service.BookService;
 import com.library.service.StudentService;
@@ -16,10 +17,13 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
 
         // Création des services
-        BookService bookService = new BookService(new BookDAO());
-        StudentService studentService = new StudentService();
+        BookDAO bookDAO = new BookDAO();
+        StudentDAO studentDAO = new StudentDAO();
         BorrowDAO borrowDAO = new BorrowDAO();
-        BorrowService borrowService = new BorrowService(bookService,studentService,borrowDAO);
+
+        BookService bookService = new BookService(bookDAO);
+        StudentService studentService = new StudentService(studentDAO);
+        BorrowService borrowService = new BorrowService(bookService, studentService, borrowDAO, bookDAO, studentDAO);
 
         boolean running = true;
 

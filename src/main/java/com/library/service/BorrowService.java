@@ -6,10 +6,7 @@ import com.library.dao.BorrowDAO;
 import com.library.model.Book;
 import com.library.model.Student;
 import com.library.model.Borrow;
-import com.library.util.DbConnection;
 
-import java.sql.Connection;
-import java.sql.SQLException;
 import java.util.Date;
 import java.util.List;
 import java.util.Optional;
@@ -27,24 +24,24 @@ public class BorrowService {
     private StudentDAO studentDAO;
 
     // Constructor
-    public BorrowService(BookService bookService, StudentService studentService, BorrowDAO borrowDAO) {
+    public BorrowService(BookService bookService, StudentService studentService,
+                         BorrowDAO borrowDAO, BookDAO bookDAO, StudentDAO studentDAO) {
         this.bookService = bookService;
         this.studentService = studentService;
         this.borrowDAO = borrowDAO;
+        this.bookDAO = bookDAO; // Initialize bookDAO
+        this.studentDAO = studentDAO; // Initialize studentDAO
     }
-
 
     // Borrow a book
     public String borrowBook(int studentId, int bookId) {
         try {
-            // Retrieve student and book
-            Student student = studentDAO.getStudentById(studentId);
-            Optional<Book> bookOptional = bookDAO.getBookById(bookId);
+            // Retrieve student
+            Student student = studentDAO.getStudentById(studentId)
+                    .orElseThrow(() -> new IllegalArgumentException("Student not found"));
 
-            // Validate student and book
-            if (student == null) {
-                throw new IllegalArgumentException("Student not found");
-            }
+            // Retrieve book
+            Optional<Book> bookOptional = bookDAO.getBookById(bookId);
             if (!bookOptional.isPresent()) {
                 throw new IllegalArgumentException("Book not found");
             }
@@ -53,7 +50,7 @@ public class BorrowService {
 
             // Check if book is available
             if (!book.isAvailable()) {
-                throw new IllegalStateException("Book is not available");
+                return "Le livre n'est pas disponible.";
             }
 
             // Create new borrow record
@@ -70,17 +67,23 @@ public class BorrowService {
             bookDAO.update(book);
 
             return "Livre emprunté avec succès!";
-
+        } catch (IllegalArgumentException e) {
+            // Log the specific exception
+            LOGGER.log(Level.WARNING, "Borrowing error: " + e.getMessage(), e);
+            throw e; // Rethrow the specific exception
         } catch (Exception e) {
-            LOGGER.log(Level.SEVERE, "Error borrowing book", e);
+            // Log unexpected exceptions
+            LOGGER.log(Level.SEVERE, "Unexpected error borrowing book", e);
             throw new RuntimeException("Failed to borrow book", e);
         }
     }
+
     // Return a book
     public String returnBook(int studentId, int bookId) {
         try {
             // Find active borrow for this student and book
-            List<Borrow> studentBorrows = borrowDAO.getBorrowsByStudent(studentDAO.getStudentById(studentId));
+            List<Borrow> studentBorrows = borrowDAO.getBorrowsByStudent(studentDAO.getStudentById(studentId)
+                    .orElseThrow(() -> new IllegalArgumentException("Student not found")));
 
             Borrow activeBorrow = studentBorrows.stream()
                     .filter(b -> b.getBook().getId() == bookId && b.getReturnDate() == null)
@@ -108,14 +111,12 @@ public class BorrowService {
             throw new RuntimeException("Failed to return book", e);
         }
     }
+
     // Check if a book is currently borrowed
     public boolean isBookCurrentlyBorrowed(int bookId) {
         List<Borrow> borrows = borrowDAO.getAllBorrows();
         return borrows.stream()
-                .anyMatch(borrow ->
-                        borrow.getBook().getId() == bookId &&
-                                borrow.getReturnDate() == null
-                );
+                .anyMatch(borrow -> borrow.getBook().getId() == bookId && borrow.getReturnDate() == null);
     }
 
     // Get all borrows for a student

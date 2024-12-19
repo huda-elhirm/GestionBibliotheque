@@ -32,7 +32,7 @@ public class BorrowDAO {
                 int studentId = rs.getInt("student_id");
                 int bookId = rs.getInt("book_id");
 
-                Student student = studentDAO.getStudentById(studentId);
+                Student student = studentDAO.getStudentById(studentId).get();
                 Book book = bookDAO.getBookById(bookId).get();
 
                 Borrow borrow = new Borrow(
@@ -51,39 +51,40 @@ public class BorrowDAO {
     }
 
     public void save(Borrow borrow) {
-        String query = "INSERT INTO borrows (student_id, book_id, borrow_date, return_date) VALUES (?, ?, ?, ?)";
+        String query = "INSERT INTO borrows (id, student_id, book_id, borrow_date, return_date) VALUES (?, ?, ?, ?, ?)";
 
         try (Connection connection = DbConnection.getConnection();
              PreparedStatement stmt = connection.prepareStatement(query, Statement.RETURN_GENERATED_KEYS)) {
 
+            stmt.setInt(1, borrow.getId());
             // Set student ID
-            stmt.setInt(1, borrow.getStudent().getId());
+            stmt.setInt(2, borrow.getStudent().getId());
 
             // Set book ID
-            stmt.setInt(2, borrow.getBook().getId());
+            stmt.setInt(3, borrow.getBook().getId());
 
             // Set borrow date
             if (borrow.getBorrowDate() != null) {
-                stmt.setDate(3, new java.sql.Date(borrow.getBorrowDate().getTime()));
+                stmt.setDate(4, new java.sql.Date(borrow.getBorrowDate().getTime()));
             } else {
-                stmt.setDate(3, new java.sql.Date(System.currentTimeMillis()));
+                stmt.setDate(4, new java.sql.Date(System.currentTimeMillis()));
             }
 
             // Set return date
             if (borrow.getReturnDate() != null) {
-                stmt.setDate(4, new java.sql.Date(borrow.getReturnDate().getTime()));
+                stmt.setDate(5, new java.sql.Date(borrow.getReturnDate().getTime()));
             } else {
-                stmt.setNull(4, Types.DATE);
+                stmt.setNull(5, Types.DATE);
             }
 
             stmt.executeUpdate();
 
-            // Retrieve the generated ID
-            try (ResultSet generatedKeys = stmt.getGeneratedKeys()) {
-                if (generatedKeys.next()) {
-                    borrow.setId(generatedKeys.getInt(1));
-                }
-            }
+//            // Retrieve the generated ID
+//            try (ResultSet generatedKeys = stmt.getGeneratedKeys()) {
+//                if (generatedKeys.next()) {
+//                    borrow.setId(generatedKeys.getInt(1));
+//                }
+//            }
         } catch (SQLException e) {
             e.printStackTrace();
         }
@@ -107,7 +108,7 @@ public class BorrowDAO {
                     int studentId = rs.getInt("student_id");
                     int bookId = rs.getInt("book_id");
 
-                    Student student = studentDAO.getStudentById(studentId);
+                    Student student = studentDAO.getStudentById(studentId).get();
                     Book book = bookDAO.getBookById(bookId).get();
 
                     return new Borrow(

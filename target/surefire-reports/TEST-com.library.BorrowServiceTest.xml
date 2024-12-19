@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.library.BorrowServiceTest" time="0.051" tests="4" errors="4" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.library.BorrowServiceTest" time="0.733" tests="4" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="21"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
-    <property name="java.class.path" value="/media/houda/SAUVEGARDES1/COURS - TD/QUALITE/DEVOIR/GestionBibliotheque/GestionBibliotheque/target/test-classes:/media/houda/SAUVEGARDES1/COURS - TD/QUALITE/DEVOIR/GestionBibliotheque/GestionBibliotheque/target/classes:/home/houda/.m2/repository/junit/junit/4.13.2/junit-4.13.2.jar:/home/houda/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/home/houda/.m2/repository/org/projectlombok/lombok/1.18.34/lombok-1.18.34.jar:/home/houda/.m2/repository/org/junit/jupiter/junit-jupiter/5.11.4/junit-jupiter-5.11.4.jar:/home/houda/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.11.4/junit-jupiter-api-5.11.4.jar:/home/houda/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/home/houda/.m2/repository/org/junit/platform/junit-platform-commons/1.11.4/junit-platform-commons-1.11.4.jar:/home/houda/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/home/houda/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.11.4/junit-jupiter-params-5.11.4.jar:/home/houda/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.11.4/junit-jupiter-engine-5.11.4.jar:/home/houda/.m2/repository/org/junit/platform/junit-platform-engine/1.11.4/junit-platform-engine-1.11.4.jar:"/>
+    <property name="java.class.path" value="/media/houda/SAUVEGARDES1/COURS - TD/QUALITE/DEVOIR/GestionBibliotheque/GestionBibliotheque/target/test-classes:/media/houda/SAUVEGARDES1/COURS - TD/QUALITE/DEVOIR/GestionBibliotheque/GestionBibliotheque/target/classes:/home/houda/.m2/repository/junit/junit/4.13.2/junit-4.13.2.jar:/home/houda/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/home/houda/.m2/repository/org/projectlombok/lombok/1.18.34/lombok-1.18.34.jar:/home/houda/.m2/repository/org/junit/jupiter/junit-jupiter/5.11.4/junit-jupiter-5.11.4.jar:/home/houda/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.11.4/junit-jupiter-api-5.11.4.jar:/home/houda/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/home/houda/.m2/repository/org/junit/platform/junit-platform-commons/1.11.4/junit-platform-commons-1.11.4.jar:/home/houda/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/home/houda/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.11.4/junit-jupiter-params-5.11.4.jar:/home/houda/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.11.4/junit-jupiter-engine-5.11.4.jar:/home/houda/.m2/repository/org/junit/platform/junit-platform-engine/1.11.4/junit-platform-engine-1.11.4.jar:/home/houda/.m2/repository/com/mysql/mysql-connector-j/8.0.32/mysql-connector-j-8.0.32.jar:/home/houda/.m2/repository/com/google/protobuf/protobuf-java/3.21.9/protobuf-java-3.21.9.jar:"/>
     <property name="java.vm.vendor" value="Ubuntu"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="java.vendor.url" value="https://ubuntu.com/"/>
@@ -13,9 +13,9 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="GB"/>
     <property name="sun.boot.library.path" value="/usr/lib/jvm/java-21-openjdk-amd64/lib"/>
-    <property name="sun.java.command" value="/media/houda/SAUVEGARDES1/COURS - TD/QUALITE/DEVOIR/GestionBibliotheque/GestionBibliotheque/target/surefire/surefirebooter-20241219152013747_3.jar /media/houda/SAUVEGARDES1/COURS - TD/QUALITE/DEVOIR/GestionBibliotheque/GestionBibliotheque/target/surefire 2024-12-19T15-20-13_667-jvmRun1 surefire-20241219152013747_1tmp surefire_0-20241219152013747_2tmp"/>
+    <property name="sun.java.command" value="/media/houda/SAUVEGARDES1/COURS - TD/QUALITE/DEVOIR/GestionBibliotheque/GestionBibliotheque/target/surefire/surefirebooter-20241219221510928_3.jar /media/houda/SAUVEGARDES1/COURS - TD/QUALITE/DEVOIR/GestionBibliotheque/GestionBibliotheque/target/surefire 2024-12-19T22-15-10_854-jvmRun1 surefire-20241219221510928_1tmp surefire_0-20241219221510928_2tmp"/>
     <property name="jdk.debug" value="release"/>
-    <property name="surefire.test.class.path" value="/media/houda/SAUVEGARDES1/COURS - TD/QUALITE/DEVOIR/GestionBibliotheque/GestionBibliotheque/target/test-classes:/media/houda/SAUVEGARDES1/COURS - TD/QUALITE/DEVOIR/GestionBibliotheque/GestionBibliotheque/target/classes:/home/houda/.m2/repository/junit/junit/4.13.2/junit-4.13.2.jar:/home/houda/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/home/houda/.m2/repository/org/projectlombok/lombok/1.18.34/lombok-1.18.34.jar:/home/houda/.m2/repository/org/junit/jupiter/junit-jupiter/5.11.4/junit-jupiter-5.11.4.jar:/home/houda/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.11.4/junit-jupiter-api-5.11.4.jar:/home/houda/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/home/houda/.m2/repository/org/junit/platform/junit-platform-commons/1.11.4/junit-platform-commons-1.11.4.jar:/home/houda/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/home/houda/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.11.4/junit-jupiter-params-5.11.4.jar:/home/houda/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.11.4/junit-jupiter-engine-5.11.4.jar:/home/houda/.m2/repository/org/junit/platform/junit-platform-engine/1.11.4/junit-platform-engine-1.11.4.jar:"/>
+    <property name="surefire.test.class.path" value="/media/houda/SAUVEGARDES1/COURS - TD/QUALITE/DEVOIR/GestionBibliotheque/GestionBibliotheque/target/test-classes:/media/houda/SAUVEGARDES1/COURS - TD/QUALITE/DEVOIR/GestionBibliotheque/GestionBibliotheque/target/classes:/home/houda/.m2/repository/junit/junit/4.13.2/junit-4.13.2.jar:/home/houda/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/home/houda/.m2/repository/org/projectlombok/lombok/1.18.34/lombok-1.18.34.jar:/home/houda/.m2/repository/org/junit/jupiter/junit-jupiter/5.11.4/junit-jupiter-5.11.4.jar:/home/houda/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.11.4/junit-jupiter-api-5.11.4.jar:/home/houda/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/home/houda/.m2/repository/org/junit/platform/junit-platform-commons/1.11.4/junit-platform-commons-1.11.4.jar:/home/houda/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/home/houda/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.11.4/junit-jupiter-params-5.11.4.jar:/home/houda/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.11.4/junit-jupiter-engine-5.11.4.jar:/home/houda/.m2/repository/org/junit/platform/junit-platform-engine/1.11.4/junit-platform-engine-1.11.4.jar:/home/houda/.m2/repository/com/mysql/mysql-connector-j/8.0.32/mysql-connector-j-8.0.32.jar:/home/houda/.m2/repository/com/google/protobuf/protobuf-java/3.21.9/protobuf-java-3.21.9.jar:"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="user.home" value="/home/houda"/>
     <property name="user.language" value="en"/>
@@ -28,7 +28,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
-    <property name="surefire.real.class.path" value="/media/houda/SAUVEGARDES1/COURS - TD/QUALITE/DEVOIR/GestionBibliotheque/GestionBibliotheque/target/surefire/surefirebooter-20241219152013747_3.jar"/>
+    <property name="surefire.real.class.path" value="/media/houda/SAUVEGARDES1/COURS - TD/QUALITE/DEVOIR/GestionBibliotheque/GestionBibliotheque/target/surefire/surefirebooter-20241219221510928_3.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="21.0.5+11-Ubuntu-1ubuntu124.04"/>
     <property name="user.name" value="houda"/>
@@ -54,23 +54,21 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="65.0"/>
   </properties>
-  <testcase name="testBorrowBookStudentNotFound" classname="com.library.BorrowServiceTest" time="0.014">
-    <error message="Failed to borrow book" type="java.lang.RuntimeException"><![CDATA[java.lang.RuntimeException: Failed to borrow book
-	at com.library.service.BorrowService.borrowBook(BorrowService.java:76)
-	at com.library.BorrowServiceTest.testBorrowBookStudentNotFound(BorrowServiceTest.java:61)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-Caused by: java.lang.NullPointerException: Cannot invoke "com.library.dao.StudentDAO.getStudentById(int)" because "this.studentDAO" is null
-	at com.library.service.BorrowService.borrowBook(BorrowService.java:41)
-	... 4 more
-]]></error>
-    <system-err><![CDATA[Dec 19, 2024 3:20:14 PM com.library.dao.StudentDAO addStudent
+  <testcase name="testBorrowBookStudentNotFound" classname="com.library.BorrowServiceTest" time="0.136">
+    <system-out><![CDATA[Livre inséré avec succès !
+]]></system-out>
+    <system-err><![CDATA[Dec 19, 2024 10:15:12 PM com.library.dao.StudentDAO addStudent
 SEVERE: Erreur lors de l'ajout de l'étudiant
-java.sql.SQLException: Database connection error
-	at com.library.util.DbConnection.getConnection(DbConnection.java:17)
-	at com.library.dao.StudentDAO.addStudent(StudentDAO.java:24)
-	at com.library.BorrowServiceTest.setUp(BorrowServiceTest.java:32)
+java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '1' for key 'students.PRIMARY'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:117)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:916)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1061)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1009)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeLargeUpdate(ClientPreparedStatement.java:1320)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdate(ClientPreparedStatement.java:994)
+	at com.library.dao.StudentDAO.addStudent(StudentDAO.java:28)
+	at com.library.BorrowServiceTest.setUp(BorrowServiceTest.java:38)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:767)
@@ -144,22 +142,19 @@ java.sql.SQLException: Database connection error
 	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-Caused by: java.lang.ClassNotFoundException: com.mysql.cj.jdbc.Driver
-	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
-	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
-	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526)
-	at java.base/java.lang.Class.forName0(Native Method)
-	at java.base/java.lang.Class.forName(Class.java:421)
-	at java.base/java.lang.Class.forName(Class.java:412)
-	at com.library.util.DbConnection.getConnection(DbConnection.java:14)
-	... 75 more
 
-Dec 19, 2024 3:20:14 PM com.library.dao.StudentDAO addStudent
+Dec 19, 2024 10:15:12 PM com.library.dao.StudentDAO addStudent
 SEVERE: Erreur lors de l'ajout de l'étudiant
-java.sql.SQLException: Database connection error
-	at com.library.util.DbConnection.getConnection(DbConnection.java:17)
-	at com.library.dao.StudentDAO.addStudent(StudentDAO.java:24)
-	at com.library.BorrowServiceTest.setUp(BorrowServiceTest.java:33)
+java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '2' for key 'students.PRIMARY'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:117)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:916)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1061)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1009)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeLargeUpdate(ClientPreparedStatement.java:1320)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdate(ClientPreparedStatement.java:994)
+	at com.library.dao.StudentDAO.addStudent(StudentDAO.java:28)
+	at com.library.BorrowServiceTest.setUp(BorrowServiceTest.java:39)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:767)
@@ -233,23 +228,21 @@ java.sql.SQLException: Database connection error
 	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-Caused by: java.lang.ClassNotFoundException: com.mysql.cj.jdbc.Driver
-	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
-	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
-	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526)
-	at java.base/java.lang.Class.forName0(Native Method)
-	at java.base/java.lang.Class.forName(Class.java:421)
-	at java.base/java.lang.Class.forName(Class.java:412)
-	at com.library.util.DbConnection.getConnection(DbConnection.java:14)
-	... 75 more
 
-Erreur lors de l'ajout du livre : Database connection error
-Erreur lors de l'ajout du livre : Database connection error
-Dec 19, 2024 3:20:14 PM com.library.service.BorrowService borrowBook
-SEVERE: Error borrowing book
-java.lang.NullPointerException: Cannot invoke "com.library.dao.StudentDAO.getStudentById(int)" because "this.studentDAO" is null
+Erreur lors de l'ajout du livre : Duplicate entry '2' for key 'books.PRIMARY'
+Dec 19, 2024 10:15:12 PM com.library.dao.StudentDAO getStudentById
+WARNING: Aucun étudiant trouvé avec l'ID : 3
+Dec 19, 2024 10:15:12 PM com.library.service.BorrowService borrowBook
+WARNING: Borrowing error: Student not found
+java.lang.IllegalArgumentException: Student not found
+	at com.library.service.BorrowService.lambda$borrowBook$0(BorrowService.java:41)
+	at java.base/java.util.Optional.orElseThrow(Optional.java:403)
 	at com.library.service.BorrowService.borrowBook(BorrowService.java:41)
-	at com.library.BorrowServiceTest.testBorrowBookStudentNotFound(BorrowServiceTest.java:61)
+	at com.library.BorrowServiceTest.lambda$testBorrowBookStudentNotFound$0(BorrowServiceTest.java:68)
+	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:53)
+	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:35)
+	at org.junit.jupiter.api.Assertions.assertThrows(Assertions.java:3128)
+	at com.library.BorrowServiceTest.testBorrowBookStudentNotFound(BorrowServiceTest.java:67)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:767)
@@ -322,23 +315,19 @@ java.lang.NullPointerException: Cannot invoke "com.library.dao.StudentDAO.getStu
 
 ]]></system-err>
   </testcase>
-  <testcase name="testBorrowBookNotAvailable" classname="com.library.BorrowServiceTest" time="0.012">
-    <error message="Failed to borrow book" type="java.lang.RuntimeException"><![CDATA[java.lang.RuntimeException: Failed to borrow book
-	at com.library.service.BorrowService.borrowBook(BorrowService.java:76)
-	at com.library.BorrowServiceTest.testBorrowBookNotAvailable(BorrowServiceTest.java:55)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-Caused by: java.lang.NullPointerException: Cannot invoke "com.library.dao.StudentDAO.getStudentById(int)" because "this.studentDAO" is null
-	at com.library.service.BorrowService.borrowBook(BorrowService.java:41)
-	... 4 more
-]]></error>
-    <system-err><![CDATA[Dec 19, 2024 3:20:14 PM com.library.dao.StudentDAO addStudent
+  <testcase name="testBorrowBookNotAvailable" classname="com.library.BorrowServiceTest" time="0.213">
+    <system-err><![CDATA[Dec 19, 2024 10:15:12 PM com.library.dao.StudentDAO addStudent
 SEVERE: Erreur lors de l'ajout de l'étudiant
-java.sql.SQLException: Database connection error
-	at com.library.util.DbConnection.getConnection(DbConnection.java:17)
-	at com.library.dao.StudentDAO.addStudent(StudentDAO.java:24)
-	at com.library.BorrowServiceTest.setUp(BorrowServiceTest.java:32)
+java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '1' for key 'students.PRIMARY'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:117)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:916)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1061)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1009)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeLargeUpdate(ClientPreparedStatement.java:1320)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdate(ClientPreparedStatement.java:994)
+	at com.library.dao.StudentDAO.addStudent(StudentDAO.java:28)
+	at com.library.BorrowServiceTest.setUp(BorrowServiceTest.java:38)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:767)
@@ -412,22 +401,19 @@ java.sql.SQLException: Database connection error
 	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-Caused by: java.lang.ClassNotFoundException: com.mysql.cj.jdbc.Driver
-	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
-	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
-	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526)
-	at java.base/java.lang.Class.forName0(Native Method)
-	at java.base/java.lang.Class.forName(Class.java:421)
-	at java.base/java.lang.Class.forName(Class.java:412)
-	at com.library.util.DbConnection.getConnection(DbConnection.java:14)
-	... 75 more
 
-Dec 19, 2024 3:20:14 PM com.library.dao.StudentDAO addStudent
+Dec 19, 2024 10:15:12 PM com.library.dao.StudentDAO addStudent
 SEVERE: Erreur lors de l'ajout de l'étudiant
-java.sql.SQLException: Database connection error
-	at com.library.util.DbConnection.getConnection(DbConnection.java:17)
-	at com.library.dao.StudentDAO.addStudent(StudentDAO.java:24)
-	at com.library.BorrowServiceTest.setUp(BorrowServiceTest.java:33)
+java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '2' for key 'students.PRIMARY'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:117)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:916)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1061)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1009)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeLargeUpdate(ClientPreparedStatement.java:1320)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdate(ClientPreparedStatement.java:994)
+	at com.library.dao.StudentDAO.addStudent(StudentDAO.java:28)
+	at com.library.BorrowServiceTest.setUp(BorrowServiceTest.java:39)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:767)
@@ -501,112 +487,24 @@ java.sql.SQLException: Database connection error
 	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-Caused by: java.lang.ClassNotFoundException: com.mysql.cj.jdbc.Driver
-	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
-	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
-	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526)
-	at java.base/java.lang.Class.forName0(Native Method)
-	at java.base/java.lang.Class.forName(Class.java:421)
-	at java.base/java.lang.Class.forName(Class.java:412)
-	at com.library.util.DbConnection.getConnection(DbConnection.java:14)
-	... 75 more
 
-Erreur lors de l'ajout du livre : Database connection error
-Erreur lors de l'ajout du livre : Database connection error
-Dec 19, 2024 3:20:14 PM com.library.service.BorrowService borrowBook
-SEVERE: Error borrowing book
-java.lang.NullPointerException: Cannot invoke "com.library.dao.StudentDAO.getStudentById(int)" because "this.studentDAO" is null
-	at com.library.service.BorrowService.borrowBook(BorrowService.java:41)
-	at com.library.BorrowServiceTest.testBorrowBookNotAvailable(BorrowServiceTest.java:55)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:767)
-	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
-	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
-	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:156)
-	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:147)
-	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:86)
-	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(InterceptingExecutableInvoker.java:103)
-	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.lambda$invoke$0(InterceptingExecutableInvoker.java:93)
-	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
-	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
-	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
-	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
-	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:92)
-	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:86)
-	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$8(TestMethodTestDescriptor.java:217)
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:213)
-	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:138)
-	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:68)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:156)
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146)
-	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144)
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:160)
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146)
-	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144)
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:160)
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146)
-	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144)
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100)
-	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
-	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
-	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
-	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:198)
-	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:169)
-	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:93)
-	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:58)
-	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:141)
-	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:57)
-	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:103)
-	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:85)
-	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:47)
-	at org.apache.maven.surefire.junitplatform.LazyLauncher.execute(LazyLauncher.java:56)
-	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.execute(JUnitPlatformProvider.java:184)
-	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:148)
-	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:122)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
-	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
-	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-
+Erreur lors de l'ajout du livre : Duplicate entry '1' for key 'books.PRIMARY'
+Erreur lors de l'ajout du livre : Duplicate entry '2' for key 'books.PRIMARY'
 ]]></system-err>
   </testcase>
-  <testcase name="testReturnBook" classname="com.library.BorrowServiceTest" time="0.009">
-    <error message="Failed to borrow book" type="java.lang.RuntimeException"><![CDATA[java.lang.RuntimeException: Failed to borrow book
-	at com.library.service.BorrowService.borrowBook(BorrowService.java:76)
-	at com.library.BorrowServiceTest.testReturnBook(BorrowServiceTest.java:48)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-Caused by: java.lang.NullPointerException: Cannot invoke "com.library.dao.StudentDAO.getStudentById(int)" because "this.studentDAO" is null
-	at com.library.service.BorrowService.borrowBook(BorrowService.java:41)
-	... 4 more
-]]></error>
-    <system-err><![CDATA[Dec 19, 2024 3:20:14 PM com.library.dao.StudentDAO addStudent
+  <testcase name="testReturnBook" classname="com.library.BorrowServiceTest" time="0.257">
+    <system-err><![CDATA[Dec 19, 2024 10:15:12 PM com.library.dao.StudentDAO addStudent
 SEVERE: Erreur lors de l'ajout de l'étudiant
-java.sql.SQLException: Database connection error
-	at com.library.util.DbConnection.getConnection(DbConnection.java:17)
-	at com.library.dao.StudentDAO.addStudent(StudentDAO.java:24)
-	at com.library.BorrowServiceTest.setUp(BorrowServiceTest.java:32)
+java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '1' for key 'students.PRIMARY'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:117)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:916)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1061)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1009)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeLargeUpdate(ClientPreparedStatement.java:1320)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdate(ClientPreparedStatement.java:994)
+	at com.library.dao.StudentDAO.addStudent(StudentDAO.java:28)
+	at com.library.BorrowServiceTest.setUp(BorrowServiceTest.java:38)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:767)
@@ -680,22 +578,19 @@ java.sql.SQLException: Database connection error
 	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-Caused by: java.lang.ClassNotFoundException: com.mysql.cj.jdbc.Driver
-	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
-	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
-	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526)
-	at java.base/java.lang.Class.forName0(Native Method)
-	at java.base/java.lang.Class.forName(Class.java:421)
-	at java.base/java.lang.Class.forName(Class.java:412)
-	at com.library.util.DbConnection.getConnection(DbConnection.java:14)
-	... 75 more
 
-Dec 19, 2024 3:20:14 PM com.library.dao.StudentDAO addStudent
+Dec 19, 2024 10:15:12 PM com.library.dao.StudentDAO addStudent
 SEVERE: Erreur lors de l'ajout de l'étudiant
-java.sql.SQLException: Database connection error
-	at com.library.util.DbConnection.getConnection(DbConnection.java:17)
-	at com.library.dao.StudentDAO.addStudent(StudentDAO.java:24)
-	at com.library.BorrowServiceTest.setUp(BorrowServiceTest.java:33)
+java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '2' for key 'students.PRIMARY'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:117)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:916)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1061)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1009)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeLargeUpdate(ClientPreparedStatement.java:1320)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdate(ClientPreparedStatement.java:994)
+	at com.library.dao.StudentDAO.addStudent(StudentDAO.java:28)
+	at com.library.BorrowServiceTest.setUp(BorrowServiceTest.java:39)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:767)
@@ -769,112 +664,24 @@ java.sql.SQLException: Database connection error
 	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-Caused by: java.lang.ClassNotFoundException: com.mysql.cj.jdbc.Driver
-	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
-	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
-	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526)
-	at java.base/java.lang.Class.forName0(Native Method)
-	at java.base/java.lang.Class.forName(Class.java:421)
-	at java.base/java.lang.Class.forName(Class.java:412)
-	at com.library.util.DbConnection.getConnection(DbConnection.java:14)
-	... 75 more
 
-Erreur lors de l'ajout du livre : Database connection error
-Erreur lors de l'ajout du livre : Database connection error
-Dec 19, 2024 3:20:14 PM com.library.service.BorrowService borrowBook
-SEVERE: Error borrowing book
-java.lang.NullPointerException: Cannot invoke "com.library.dao.StudentDAO.getStudentById(int)" because "this.studentDAO" is null
-	at com.library.service.BorrowService.borrowBook(BorrowService.java:41)
-	at com.library.BorrowServiceTest.testReturnBook(BorrowServiceTest.java:48)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:767)
-	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
-	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
-	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:156)
-	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:147)
-	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:86)
-	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(InterceptingExecutableInvoker.java:103)
-	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.lambda$invoke$0(InterceptingExecutableInvoker.java:93)
-	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
-	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
-	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
-	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
-	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:92)
-	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:86)
-	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$8(TestMethodTestDescriptor.java:217)
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:213)
-	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:138)
-	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:68)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:156)
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146)
-	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144)
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:160)
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146)
-	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144)
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:160)
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146)
-	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144)
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100)
-	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
-	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
-	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
-	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:198)
-	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:169)
-	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:93)
-	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:58)
-	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:141)
-	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:57)
-	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:103)
-	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:85)
-	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:47)
-	at org.apache.maven.surefire.junitplatform.LazyLauncher.execute(LazyLauncher.java:56)
-	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.execute(JUnitPlatformProvider.java:184)
-	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:148)
-	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:122)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
-	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
-	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-
+Erreur lors de l'ajout du livre : Duplicate entry '1' for key 'books.PRIMARY'
+Erreur lors de l'ajout du livre : Duplicate entry '2' for key 'books.PRIMARY'
 ]]></system-err>
   </testcase>
-  <testcase name="testBorrowBook" classname="com.library.BorrowServiceTest" time="0.009">
-    <error message="Failed to borrow book" type="java.lang.RuntimeException"><![CDATA[java.lang.RuntimeException: Failed to borrow book
-	at com.library.service.BorrowService.borrowBook(BorrowService.java:76)
-	at com.library.BorrowServiceTest.testBorrowBook(BorrowServiceTest.java:42)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-Caused by: java.lang.NullPointerException: Cannot invoke "com.library.dao.StudentDAO.getStudentById(int)" because "this.studentDAO" is null
-	at com.library.service.BorrowService.borrowBook(BorrowService.java:41)
-	... 4 more
-]]></error>
-    <system-err><![CDATA[Dec 19, 2024 3:20:14 PM com.library.dao.StudentDAO addStudent
+  <testcase name="testBorrowBook" classname="com.library.BorrowServiceTest" time="0.122">
+    <system-err><![CDATA[Dec 19, 2024 10:15:13 PM com.library.dao.StudentDAO addStudent
 SEVERE: Erreur lors de l'ajout de l'étudiant
-java.sql.SQLException: Database connection error
-	at com.library.util.DbConnection.getConnection(DbConnection.java:17)
-	at com.library.dao.StudentDAO.addStudent(StudentDAO.java:24)
-	at com.library.BorrowServiceTest.setUp(BorrowServiceTest.java:32)
+java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '1' for key 'students.PRIMARY'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:117)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:916)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1061)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1009)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeLargeUpdate(ClientPreparedStatement.java:1320)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdate(ClientPreparedStatement.java:994)
+	at com.library.dao.StudentDAO.addStudent(StudentDAO.java:28)
+	at com.library.BorrowServiceTest.setUp(BorrowServiceTest.java:38)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:767)
@@ -948,22 +755,19 @@ java.sql.SQLException: Database connection error
 	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-Caused by: java.lang.ClassNotFoundException: com.mysql.cj.jdbc.Driver
-	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
-	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
-	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526)
-	at java.base/java.lang.Class.forName0(Native Method)
-	at java.base/java.lang.Class.forName(Class.java:421)
-	at java.base/java.lang.Class.forName(Class.java:412)
-	at com.library.util.DbConnection.getConnection(DbConnection.java:14)
-	... 75 more
 
-Dec 19, 2024 3:20:14 PM com.library.dao.StudentDAO addStudent
+Dec 19, 2024 10:15:13 PM com.library.dao.StudentDAO addStudent
 SEVERE: Erreur lors de l'ajout de l'étudiant
-java.sql.SQLException: Database connection error
-	at com.library.util.DbConnection.getConnection(DbConnection.java:17)
-	at com.library.dao.StudentDAO.addStudent(StudentDAO.java:24)
-	at com.library.BorrowServiceTest.setUp(BorrowServiceTest.java:33)
+java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '2' for key 'students.PRIMARY'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:117)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:916)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1061)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1009)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeLargeUpdate(ClientPreparedStatement.java:1320)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdate(ClientPreparedStatement.java:994)
+	at com.library.dao.StudentDAO.addStudent(StudentDAO.java:28)
+	at com.library.BorrowServiceTest.setUp(BorrowServiceTest.java:39)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:767)
@@ -1037,23 +841,20 @@ java.sql.SQLException: Database connection error
 	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-Caused by: java.lang.ClassNotFoundException: com.mysql.cj.jdbc.Driver
-	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
-	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
-	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526)
-	at java.base/java.lang.Class.forName0(Native Method)
-	at java.base/java.lang.Class.forName(Class.java:421)
-	at java.base/java.lang.Class.forName(Class.java:412)
-	at com.library.util.DbConnection.getConnection(DbConnection.java:14)
-	... 75 more
 
-Erreur lors de l'ajout du livre : Database connection error
-Erreur lors de l'ajout du livre : Database connection error
-Dec 19, 2024 3:20:14 PM com.library.service.BorrowService borrowBook
-SEVERE: Error borrowing book
-java.lang.NullPointerException: Cannot invoke "com.library.dao.StudentDAO.getStudentById(int)" because "this.studentDAO" is null
-	at com.library.service.BorrowService.borrowBook(BorrowService.java:41)
-	at com.library.BorrowServiceTest.testBorrowBook(BorrowServiceTest.java:42)
+Erreur lors de l'ajout du livre : Duplicate entry '1' for key 'books.PRIMARY'
+Erreur lors de l'ajout du livre : Duplicate entry '2' for key 'books.PRIMARY'
+java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '0' for key 'borrows.PRIMARY'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:117)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:916)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1061)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1009)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeLargeUpdate(ClientPreparedStatement.java:1320)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdate(ClientPreparedStatement.java:994)
+	at com.library.dao.BorrowDAO.save(BorrowDAO.java:80)
+	at com.library.service.BorrowService.borrowBook(BorrowService.java:63)
+	at com.library.BorrowServiceTest.testBorrowBook(BorrowServiceTest.java:48)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:767)
@@ -1123,7 +924,6 @@ java.lang.NullPointerException: Cannot invoke "com.library.dao.StudentDAO.getStu
 	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-
 ]]></system-err>
   </testcase>
 </testsuite>

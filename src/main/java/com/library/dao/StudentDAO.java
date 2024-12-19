@@ -5,8 +5,7 @@ import com.library.model.Student;
 import com.library.util.DbConnection;
 
 import java.sql.*;
-import java.util.ArrayList;
-import java.util.List;
+import java.util.*;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
@@ -20,7 +19,7 @@ public class StudentDAO {
     public StudentDAO() { }
 
     public void addStudent(Student student) {
-        String query = "INSERT INTO students (id, name, email) VALUES (?, ?)";
+        String query = "INSERT INTO students (id, name, email) VALUES (?, ?, ?)";
         try (Connection connection = DbConnection.getConnection();
                 PreparedStatement statement = connection.prepareStatement(query)) {
             statement.setInt(1, student.getId());
@@ -32,14 +31,14 @@ public class StudentDAO {
         }
     }
 
-    public Student getStudentById(int id) {
+    public Optional<Student> getStudentById(int id) {
         String query = "SELECT * FROM students WHERE id = ?";
         try (Connection connection = DbConnection.getConnection();
                 PreparedStatement statement = connection.prepareStatement(query)) {
             statement.setInt(1, id);
             try (ResultSet resultSet = statement.executeQuery()) {
                 if (resultSet.next()) {
-                    return new Student(resultSet.getInt("id"), resultSet.getString("name"),resultSet.getString("email"));
+                    return Optional.of(new Student(resultSet.getInt("id"), resultSet.getString("name"),resultSet.getString("email")));
                 } else {
                     LOGGER.log(Level.WARNING, "Aucun étudiant trouvé avec l'ID : " + id);
                 }
@@ -47,7 +46,7 @@ public class StudentDAO {
         } catch (SQLException e) {
             LOGGER.log(Level.SEVERE, "Erreur lors de la récupération de l'étudiant", e);
         }
-        return null;
+        return  Optional.empty();
     }
 
     public List<Student> getAllStudents() {
@@ -111,4 +110,5 @@ public class StudentDAO {
 
         return null;
     }
+
 }

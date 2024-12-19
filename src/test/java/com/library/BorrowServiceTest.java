@@ -26,15 +26,21 @@ class BorrowServiceTest {
         bookDAO = new BookDAO();
         studentDAO = new StudentDAO();
         borrowDAO = new BorrowDAO();
-        borrowService = new BorrowService(bookService, studentService,borrowDAO);
 
-        // Ajouter un étudiant
+        // Initialize BookService and StudentService
+        bookService = new BookService(bookDAO);
+        studentService = new StudentService(studentDAO);
+
+        // Initialize BorrowService with all dependencies
+        borrowService = new BorrowService(bookService, studentService, borrowDAO, bookDAO, studentDAO);
+
+        // Add students
         studentDAO.addStudent(new Student(1, "Alice", "alice@example.com"));
         studentDAO.addStudent(new Student(2, "Bob", "bob@example.com"));
 
-        // Ajouter des livres
-        bookDAO.add(new Book(1, "Java Programming", "John Doe", true));
-        bookDAO.add(new Book(2, "Advanced Java", "Jane Doe", true));
+        // Add books
+        bookDAO.add(new Book(1, "Java Programming", "John Doe", "AWS", 2021, "978-3-16-148510-0", true));
+        bookDAO.add(new Book(2, "Advanced Java", "Jane Doe", "PIXAR", 2020, "978-3-16-148510-1", true));
     }
 
     @Test
@@ -58,6 +64,8 @@ class BorrowServiceTest {
 
     @Test
     void testBorrowBookStudentNotFound() {
-        assertEquals("Étudiant ou livre non trouvé.", borrowService.borrowBook(3, 1));
+        assertThrows(IllegalArgumentException.class, () -> {
+            borrowService.borrowBook(3, 1); // Attempting to borrow with a non-existent student ID
+        });
     }
 }

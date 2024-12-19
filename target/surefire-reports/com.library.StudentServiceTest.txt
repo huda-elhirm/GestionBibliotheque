@@ -1,43 +1,29 @@
 -------------------------------------------------------------------------------
 Test set: com.library.StudentServiceTest
 -------------------------------------------------------------------------------
-Tests run: 4, Failures: 2, Errors: 2, Skipped: 0, Time elapsed: 0.045 s <<< FAILURE! -- in com.library.StudentServiceTest
-com.library.StudentServiceTest.testUpdateStudent -- Time elapsed: 0.010 s <<< ERROR!
-java.lang.NullPointerException: Cannot invoke "com.library.model.Student.getName()" because the return value of "com.library.dao.StudentDAO.getStudentById(int)" is null
-	at com.library.StudentServiceTest.testUpdateStudent(StudentServiceTest.java:32)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-
-com.library.StudentServiceTest.testAddStudent -- Time elapsed: 0.013 s <<< FAILURE!
-org.opentest4j.AssertionFailedError: expected: <1> but was: <0>
+Tests run: 4, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 0.218 s <<< FAILURE! -- in com.library.StudentServiceTest
+com.library.StudentServiceTest.testAddStudent -- Time elapsed: 0.040 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <Alice> but was: <Alice Smith>
 	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
 	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
 	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
-	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:150)
-	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:145)
-	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:531)
-	at com.library.StudentServiceTest.testAddStudent(StudentServiceTest.java:24)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:182)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:177)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1145)
+	at com.library.StudentServiceTest.testAddStudent(StudentServiceTest.java:28)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
 
-com.library.StudentServiceTest.testDeleteStudent -- Time elapsed: 0.008 s <<< ERROR!
-java.lang.NullPointerException: Cannot invoke "com.library.model.Student.isEmpty()" because the return value of "com.library.dao.StudentDAO.getStudentById(int)" is null
-	at com.library.StudentServiceTest.testDeleteStudent(StudentServiceTest.java:39)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-
-com.library.StudentServiceTest.testGetAllStudents -- Time elapsed: 0.007 s <<< FAILURE!
-org.opentest4j.AssertionFailedError: expected: <2> but was: <0>
+com.library.StudentServiceTest.testDeleteStudent -- Time elapsed: 0.086 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
 	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
 	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
-	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
-	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:150)
-	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:145)
-	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:531)
-	at com.library.StudentServiceTest.testGetAllStudents(StudentServiceTest.java:46)
+	at org.junit.jupiter.api.AssertTrue.failNotTrue(AssertTrue.java:63)
+	at org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:36)
+	at org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:31)
+	at org.junit.jupiter.api.Assertions.assertTrue(Assertions.java:183)
+	at com.library.StudentServiceTest.testDeleteStudent(StudentServiceTest.java:42)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)

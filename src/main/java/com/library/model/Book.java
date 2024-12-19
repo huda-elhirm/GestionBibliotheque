@@ -16,9 +16,7 @@ public class Book {
     private String isbn;
     private boolean available = true; // Add availability flag
 
-
-    // Constructeur par défaut
-    public Book(int i, String javaProgramming, String johnDoe, boolean b) {
+    public Book() {
     }
 
     // Constructeur complet
@@ -35,13 +33,14 @@ public class Book {
         this.author = author;
     }
 
-    public Book(int id, String title, String author, String publisher, int publishedYear, String isbn) {
+    public Book(int id, String title, String author, String publisher, int publishedYear, String isbn, boolean available) {
         this.id = id;
         this.title = title;
         this.author = author;
         this.publisher = publisher;
         this.publishedYear = publishedYear;
         this.isbn = isbn;
+        this.available = available;
     }
 
     // Additional methods

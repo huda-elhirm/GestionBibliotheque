@@ -1,22 +1,14 @@
 -------------------------------------------------------------------------------
 Test set: com.library.BookServiceTest
 -------------------------------------------------------------------------------
-Tests run: 3, Failures: 1, Errors: 1, Skipped: 0, Time elapsed: 0.173 s <<< FAILURE! -- in com.library.BookServiceTest
-com.library.BookServiceTest.testAddBook -- Time elapsed: 0.060 s <<< FAILURE!
-java.lang.AssertionError: expected:<1> but was:<0>
+Tests run: 3, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.941 s <<< FAILURE! -- in com.library.BookServiceTest
+com.library.BookServiceTest.testAddBook -- Time elapsed: 0.714 s <<< FAILURE!
+java.lang.AssertionError: expected:<1> but was:<2>
 	at org.junit.Assert.fail(Assert.java:89)
 	at org.junit.Assert.failNotEquals(Assert.java:835)
 	at org.junit.Assert.assertEquals(Assert.java:647)
 	at org.junit.Assert.assertEquals(Assert.java:633)
 	at com.library.BookServiceTest.testAddBook(BookServiceTest.java:26)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-
-com.library.BookServiceTest.testUpdateBook -- Time elapsed: 0.051 s <<< ERROR!
-java.util.NoSuchElementException: No value present
-	at java.base/java.util.Optional.get(Optional.java:143)
-	at com.library.BookServiceTest.testUpdateBook(BookServiceTest.java:35)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)

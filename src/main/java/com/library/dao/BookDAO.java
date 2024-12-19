@@ -19,15 +19,18 @@ public class BookDAO {
 
     // Ajouter un nouveau livre dans la base de données
     public void add(Book book) {
-        String sql = "INSERT INTO books (title, author, isbn, published_year) VALUES (?, ?, ?, ?)";
+        String sql = "INSERT INTO books (id, title, author, publisher, published_year, isbn, available) VALUES (?, ?, ?, ?, ?, ?, ?)";
         try (Connection connection = DbConnection.getConnection();
              PreparedStatement statement = connection.prepareStatement(sql)) {
              
-            statement.setString(1, book.getTitle());
-            statement.setString(2, book.getAuthor());
-            statement.setString(3, book.getIsbn());
-            statement.setInt(4, book.getPublishedYear());
-            
+            statement.setInt(1, book.getId());
+            statement.setString(2, book.getTitle());
+            statement.setString(3, book.getAuthor());
+            statement.setString(4, book.getPublisher());
+            statement.setInt(5, book.getPublishedYear());
+            statement.setString(6, book.getIsbn());
+            statement.setBoolean(7, book.isAvailable());
+
             int rowsInserted = statement.executeUpdate();
             if (rowsInserted > 0) {
                 System.out.println("Livre inséré avec succès !");
@@ -49,10 +52,12 @@ public class BookDAO {
             ResultSet resultSet = statement.executeQuery();
             
             if (resultSet.next()) {
-                book = new Book(1, "Java Programming", "John Doe", true);
+                book = new Book();
                 book.setId(resultSet.getInt("id"));
                 book.setTitle(resultSet.getString("title"));
                 book.setAuthor(resultSet.getString("author"));
+                book.setPublisher(resultSet.getString("publisher"));
+                book.setAvailable(resultSet.getBoolean("available"));
                 book.setIsbn(resultSet.getString("isbn"));
                 book.setPublishedYear(resultSet.getInt("published_year"));
             }
@@ -73,10 +78,11 @@ public class BookDAO {
              ResultSet resultSet = statement.executeQuery(sql)) {
              
             while (resultSet.next()) {
-                Book book = new Book(1, "Java Programming", "John Doe", true);
+                Book book = new Book();
                 book.setId(resultSet.getInt("id"));
                 book.setTitle(resultSet.getString("title"));
                 book.setAuthor(resultSet.getString("author"));
+                book.setPublisher(resultSet.getString("publisher"));
                 book.setIsbn(resultSet.getString("isbn"));
                 book.setPublishedYear(resultSet.getInt("published_year"));
                 books.add(book);
@@ -90,7 +96,7 @@ public class BookDAO {
 
     public void delete(int id) {
 
-        String query = "DELETE FROM book WHERE id = ?";
+        String query = "DELETE FROM books WHERE id = ?";
         try (Connection connection = DbConnection.getConnection();
              PreparedStatement statement = connection.prepareStatement(query)) {
             statement.setInt(1, id);
@@ -102,7 +108,7 @@ public class BookDAO {
     }
 
     public void update(Book book) {
-        String query = "UPDATE book SET title = ?, author = ?, publisher = ?, publishedYear = ?, isbn = ?, available = ? WHERE id = ?";
+        String query = "UPDATE books SET title = ?, author = ?, publisher = ?, published_year = ?, isbn = ?, available = ? WHERE id = ?";
         try (Connection connection = DbConnection.getConnection();
              PreparedStatement statement = connection.prepareStatement(query)) {
             statement.setString(1, book.getTitle());
@@ -133,8 +139,9 @@ public class BookDAO {
                             rs.getString("title"),
                             rs.getString("author"),
                             rs.getString("publisher"),
-                            rs.getInt("publishedYear"),
-                            rs.getString("isbn")
+                            rs.getInt("published_year"),
+                            rs.getString("isbn"),
+                            rs.getBoolean("available")
                     );
                     // Assuming you have an availability column
                     book.setAvailable(rs.getBoolean("available"));
@@ -163,8 +170,9 @@ public class BookDAO {
                         resultSet.getString("title"),
                         resultSet.getString("author"),
                         resultSet.getString("publisher"),
-                        resultSet.getInt("publishedYear"),
-                        resultSet.getString("isbn")
+                        resultSet.getInt("published_year"),
+                        resultSet.getString("isbn"),
+                        resultSet.getBoolean("available")
                 );
             }
         } catch (SQLException e) {
