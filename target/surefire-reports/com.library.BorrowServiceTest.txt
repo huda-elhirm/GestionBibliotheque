@@ -1,0 +1,48 @@
+-------------------------------------------------------------------------------
+Test set: com.library.BorrowServiceTest
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 0, Errors: 4, Skipped: 0, Time elapsed: 0.051 s <<< FAILURE! -- in com.library.BorrowServiceTest
+com.library.BorrowServiceTest.testBorrowBookStudentNotFound -- Time elapsed: 0.014 s <<< ERROR!
+java.lang.RuntimeException: Failed to borrow book
+	at com.library.service.BorrowService.borrowBook(BorrowService.java:76)
+	at com.library.BorrowServiceTest.testBorrowBookStudentNotFound(BorrowServiceTest.java:61)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+Caused by: java.lang.NullPointerException: Cannot invoke "com.library.dao.StudentDAO.getStudentById(int)" because "this.studentDAO" is null
+	at com.library.service.BorrowService.borrowBook(BorrowService.java:41)
+	... 4 more
+
+com.library.BorrowServiceTest.testBorrowBookNotAvailable -- Time elapsed: 0.012 s <<< ERROR!
+java.lang.RuntimeException: Failed to borrow book
+	at com.library.service.BorrowService.borrowBook(BorrowService.java:76)
+	at com.library.BorrowServiceTest.testBorrowBookNotAvailable(BorrowServiceTest.java:55)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+Caused by: java.lang.NullPointerException: Cannot invoke "com.library.dao.StudentDAO.getStudentById(int)" because "this.studentDAO" is null
+	at com.library.service.BorrowService.borrowBook(BorrowService.java:41)
+	... 4 more
+
+com.library.BorrowServiceTest.testReturnBook -- Time elapsed: 0.009 s <<< ERROR!
+java.lang.RuntimeException: Failed to borrow book
+	at com.library.service.BorrowService.borrowBook(BorrowService.java:76)
+	at com.library.BorrowServiceTest.testReturnBook(BorrowServiceTest.java:48)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+Caused by: java.lang.NullPointerException: Cannot invoke "com.library.dao.StudentDAO.getStudentById(int)" because "this.studentDAO" is null
+	at com.library.service.BorrowService.borrowBook(BorrowService.java:41)
+	... 4 more
+
+com.library.BorrowServiceTest.testBorrowBook -- Time elapsed: 0.009 s <<< ERROR!
+java.lang.RuntimeException: Failed to borrow book
+	at com.library.service.BorrowService.borrowBook(BorrowService.java:76)
+	at com.library.BorrowServiceTest.testBorrowBook(BorrowServiceTest.java:42)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+Caused by: java.lang.NullPointerException: Cannot invoke "com.library.dao.StudentDAO.getStudentById(int)" because "this.studentDAO" is null
+	at com.library.service.BorrowService.borrowBook(BorrowService.java:41)
+	... 4 more
+
