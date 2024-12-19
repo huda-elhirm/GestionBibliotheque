@@ -35,14 +35,14 @@ pipeline {
     }
     post {
         success {
-            emailext to: 'chimhouda',
+            emailext (  to: 'chimhouda@gmail.com',
                 subject: 'Build Success',
-                body: 'Le build a été complété avec succès.'
+                body: 'Le build a été complété avec succès.')
         }
         failure {
-            emailext to: 'chimhouda@gmail.com',
+            emailext ( to: 'chimhouda@gmail.com',
                 subject: 'Build Failed',
-                body: 'Le build a échoué.'
+                body: 'Le build a échoué.' )
         }
     }
 }
