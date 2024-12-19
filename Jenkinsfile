@@ -35,9 +35,16 @@ pipeline {
     }
     post {
         success {
-            emailext (  to: 'chimhouda@gmail.com',
-                subject: 'Build Success',
-                body: 'Le build a été complété avec succès.')
+                try {
+                emailext(
+                    to: 'chimhouda@gmail.com',
+                    subject: "Test Email from Pipeline",
+                    body: "This is a test email from the Jenkins pipeline."
+                )
+                echo "Test email sent successfully."
+                } catch (Exception e) {
+                    echo "Failed to send test email: ${e.message}"
+                }
         }
         failure {
             emailext ( to: 'chimhouda@gmail.com',
