@@ -2,6 +2,7 @@ pipeline {
     agent any
     
     environment {
+        EMAIL_TO = 'chimhouda@gmail.com'
         MAVEN_HOME = tool 'Maven'
     }
     stages {
@@ -35,16 +36,19 @@ pipeline {
     }
     post {
         success {
-                emailext (
-                    to: 'chimhouda@gmail.com',
+                emailext body: "This is a test email from the Jenkins pipeline.",
                     subject: "Test Email from Pipeline",
-                    body: "This is a test email from the Jenkins pipeline."
-                )
+                    to: '${EMAIL_TO}'
+                    
+                    
+                
         }
         failure {
-            emailext ( to: 'chimhouda@gmail.com',
+            emailext  body: 'Le build a échoué.',
                 subject: 'Build Failed',
-                body: 'Le build a échoué.' )
+                to: '${EMAIL_TO}'
+                
+                 
         }
     }
 }
