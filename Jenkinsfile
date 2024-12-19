@@ -35,7 +35,7 @@ pipeline {
     }
     post {
         success {
-            emailext to: 'chimhouda@gmail.com',
+            emailext to: 'chimhouda',
                 subject: 'Build Success',
                 body: 'Le build a été complété avec succès.'
         }
