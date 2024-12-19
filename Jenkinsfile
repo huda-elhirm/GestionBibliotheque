@@ -7,7 +7,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git 'https://github.com/huda-elhirm/GestionBibliotheque.git'
+                git branch : 'main', url : 'https://github.com/huda-elhirm/GestionBibliotheque.git'
             }
         }
         stage('Build') {
