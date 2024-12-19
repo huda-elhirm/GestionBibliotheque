@@ -6,7 +6,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git 'https://github.com/votre-depot/GestionBibliotheque.git'
+                git 'https://github.com/huda-elhirm/GestionBibliotheque.git'
             }
         }
         stage('Build') {
@@ -34,12 +34,12 @@ pipeline {
     }
     post {
         success {
-            emailext to: 'votre-email@example.com',
+            emailext to: 'houdaelhirm@gmail.com',
                 subject: 'Build Success',
                 body: 'Le build a été complété avec succès.'
         }
         failure {
-            emailext to: 'votre-email@example.com',
+            emailext to: 'houdaelhirm@gmail.com',
                 subject: 'Build Failed',
                 body: 'Le build a échoué.'
         }
