@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.library.BookServiceTest" time="0.941" tests="3" errors="0" skipped="0" failures="1">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.library.BookServiceTest" time="0.965" tests="3" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="21"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
@@ -13,7 +13,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="GB"/>
     <property name="sun.boot.library.path" value="/usr/lib/jvm/java-21-openjdk-amd64/lib"/>
-    <property name="sun.java.command" value="/media/houda/SAUVEGARDES1/COURS - TD/QUALITE/DEVOIR/GestionBibliotheque/GestionBibliotheque/target/surefire/surefirebooter-20241219221510928_3.jar /media/houda/SAUVEGARDES1/COURS - TD/QUALITE/DEVOIR/GestionBibliotheque/GestionBibliotheque/target/surefire 2024-12-19T22-15-10_854-jvmRun1 surefire-20241219221510928_1tmp surefire_0-20241219221510928_2tmp"/>
+    <property name="sun.java.command" value="/media/houda/SAUVEGARDES1/COURS - TD/QUALITE/DEVOIR/GestionBibliotheque/GestionBibliotheque/target/surefire/surefirebooter-20241219224319354_3.jar /media/houda/SAUVEGARDES1/COURS - TD/QUALITE/DEVOIR/GestionBibliotheque/GestionBibliotheque/target/surefire 2024-12-19T22-43-19_262-jvmRun1 surefire-20241219224319354_1tmp surefire_0-20241219224319354_2tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="/media/houda/SAUVEGARDES1/COURS - TD/QUALITE/DEVOIR/GestionBibliotheque/GestionBibliotheque/target/test-classes:/media/houda/SAUVEGARDES1/COURS - TD/QUALITE/DEVOIR/GestionBibliotheque/GestionBibliotheque/target/classes:/home/houda/.m2/repository/junit/junit/4.13.2/junit-4.13.2.jar:/home/houda/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/home/houda/.m2/repository/org/projectlombok/lombok/1.18.34/lombok-1.18.34.jar:/home/houda/.m2/repository/org/junit/jupiter/junit-jupiter/5.11.4/junit-jupiter-5.11.4.jar:/home/houda/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.11.4/junit-jupiter-api-5.11.4.jar:/home/houda/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/home/houda/.m2/repository/org/junit/platform/junit-platform-commons/1.11.4/junit-platform-commons-1.11.4.jar:/home/houda/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/home/houda/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.11.4/junit-jupiter-params-5.11.4.jar:/home/houda/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.11.4/junit-jupiter-engine-5.11.4.jar:/home/houda/.m2/repository/org/junit/platform/junit-platform-engine/1.11.4/junit-platform-engine-1.11.4.jar:/home/houda/.m2/repository/com/mysql/mysql-connector-j/8.0.32/mysql-connector-j-8.0.32.jar:/home/houda/.m2/repository/com/google/protobuf/protobuf-java/3.21.9/protobuf-java-3.21.9.jar:"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -28,7 +28,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
-    <property name="surefire.real.class.path" value="/media/houda/SAUVEGARDES1/COURS - TD/QUALITE/DEVOIR/GestionBibliotheque/GestionBibliotheque/target/surefire/surefirebooter-20241219221510928_3.jar"/>
+    <property name="surefire.real.class.path" value="/media/houda/SAUVEGARDES1/COURS - TD/QUALITE/DEVOIR/GestionBibliotheque/GestionBibliotheque/target/surefire/surefirebooter-20241219224319354_3.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="21.0.5+11-Ubuntu-1ubuntu124.04"/>
     <property name="user.name" value="houda"/>
@@ -54,25 +54,15 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="65.0"/>
   </properties>
-  <testcase name="testAddBook" classname="com.library.BookServiceTest" time="0.714">
-    <failure message="expected:&lt;1&gt; but was:&lt;2&gt;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: expected:<1> but was:<2>
-	at org.junit.Assert.fail(Assert.java:89)
-	at org.junit.Assert.failNotEquals(Assert.java:835)
-	at org.junit.Assert.assertEquals(Assert.java:647)
-	at org.junit.Assert.assertEquals(Assert.java:633)
-	at com.library.BookServiceTest.testAddBook(BookServiceTest.java:26)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-]]></failure>
+  <testcase name="testAddBook" classname="com.library.BookServiceTest" time="0.756">
+    <system-out><![CDATA[Livre inséré avec succès !
+]]></system-out>
+  </testcase>
+  <testcase name="testUpdateBook" classname="com.library.BookServiceTest" time="0.111">
     <system-err><![CDATA[Erreur lors de l'ajout du livre : Duplicate entry '1' for key 'books.PRIMARY'
 ]]></system-err>
   </testcase>
-  <testcase name="testUpdateBook" classname="com.library.BookServiceTest" time="0.126">
-    <system-err><![CDATA[Erreur lors de l'ajout du livre : Duplicate entry '1' for key 'books.PRIMARY'
-]]></system-err>
-  </testcase>
-  <testcase name="testDeleteBook" classname="com.library.BookServiceTest" time="0.064">
+  <testcase name="testDeleteBook" classname="com.library.BookServiceTest" time="0.058">
     <system-err><![CDATA[Erreur lors de l'ajout du livre : Duplicate entry '1' for key 'books.PRIMARY'
 ]]></system-err>
   </testcase>

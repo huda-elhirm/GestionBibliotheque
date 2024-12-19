@@ -20,11 +20,10 @@ class StudentServiceTest {
     }
 
 
-
     @Test
     void testAddStudent() {
         studentService.addStudent(new Student(1, "Alice", "alice@example.com"));
-        assertEquals(2, studentDAO.getAllStudents().size()); // Expect only 1 student
+        assertEquals(1, studentDAO.getAllStudents().size()); // Expect only 1 student
         assertEquals("Alice", studentDAO.getStudentById(1).get().getName()); // Fixed extra space
     }
 
@@ -48,4 +47,5 @@ class StudentServiceTest {
         studentService.addStudent(new Student(2, "Bob", "bob@example.com"));
         assertEquals(2, studentDAO.getAllStudents().size());
     }
+
 }
