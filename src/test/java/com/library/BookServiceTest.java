@@ -99,5 +99,6 @@ class BookServiceTest {
 
         bookDAO.deleteAllBooks();
         assertEquals(0, bookDAO.getAllBooks().size(), "All books should be deleted from the database.");
+        System.out.println(bookDAO.getAllBooks().size());
     }
 }
