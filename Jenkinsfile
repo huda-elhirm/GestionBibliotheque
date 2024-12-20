@@ -48,7 +48,6 @@ pipeline {
                 subject: 'Build Failed',
                 to: '${EMAIL_TO}'
                 
-                 
         }
     }
 }
