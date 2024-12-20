@@ -39,9 +39,6 @@ pipeline {
                 emailext body: "This is a test email from the Jenkins pipeline.",
                     subject: "Test Email from Pipeline",
                     to: '${EMAIL_TO}'
-                    
-                    
-                
         }
         failure {
             emailext  body: 'Le build a échoué.',
